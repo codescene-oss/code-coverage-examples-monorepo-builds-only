@@ -64,6 +64,7 @@ jobs:
     # NOTE: 'always()' is needed here because we want to run this step even if some of its dependencies fail
     if: always()
     steps:
+      # Debug-only step to inspect the GITHUB env vars
       - name: print env
         run: env
       - uses: actions/checkout@v4
