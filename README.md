@@ -1,7 +1,11 @@
 # CodeScene Code Coverage examples - monorepo - builds only (no PRs)
 
-This demonstrates CI build pipeline configuration in the "monorepo" setting,
-where we only run "builds" outside of any PR context.
+This repository demonstrates how CodeScene supports code coverage gates in a CI build pipeline.
+
+As such, this repository is part of the [CodeScene product documentation](https://codescene.io/docs/guides/code-coverage-gates/check-code-coverage-in-pull-and-merge-requests.html).
+
+That [documentation](https://codescene.io/docs/guides/code-coverage-gates/check-code-coverage-in-pull-and-merge-requests.html) explains how to enable code coverage gates on your own repositories.
+
+In [.github/workflows](./.github/workflows), you will find corresponding build pipelines definitions.
 
 
-In .github/workflows, you will find corresponding build pipelines definitions.
