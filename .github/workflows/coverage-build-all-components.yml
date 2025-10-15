@@ -78,6 +78,7 @@ jobs:
         with:
           path: coverage/
       - uses: ./.github/actions/check-coverage
+        # always run this step - even if some of the coverage-* jobs are skipped (e.g. because no relevant file has been changed)
         if: always()
         with:
           access-token: ${{ secrets.CODESCENE_CODE_COVERAGE_API_TOKEN }}
